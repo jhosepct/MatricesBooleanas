@@ -1,5 +1,6 @@
 import React from 'react'
 import { ButtonStyled } from '../Button/styles';
+import { Form } from './styles';
 
 interface FormMatrizProps {
     handleSubmit: (event: React.BaseSyntheticEvent<Event, EventTarget & HTMLFormElement, EventTarget>) => void;
@@ -8,13 +9,11 @@ interface FormMatrizProps {
 
 function FormMatriz({ handleSubmit, handleChange }: FormMatrizProps) {
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="">Ingrese orden de la matriz: [1:15]</label>
-                <input type="text" onChange={handleChange} placeholder="n" />
-                <ButtonStyled type={"submit"} >Iniciar</ButtonStyled>
-            </div>
-        </form>
+        <Form onSubmit={handleSubmit}>
+            <label htmlFor="">Ingrese orden de la matriz: [1:15]</label>
+            <input type="text" onChange={handleChange} placeholder="n" />
+            <ButtonStyled type={"submit"} >Iniciar</ButtonStyled>
+        </Form>
     )
 }
 
