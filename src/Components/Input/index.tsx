@@ -11,7 +11,7 @@ interface InputProps {
 
 const Input = ({ placeholder, handleChangeValue, name, value, type }: InputProps) => {
     return (
-        <input type={type} placeholder={placeholder} onChange={handleChangeValue} name={name} value={value} />
+        <input type={type} placeholder={placeholder} onChange={handleChangeValue} name={name} value={value} required />
     )
 }
 

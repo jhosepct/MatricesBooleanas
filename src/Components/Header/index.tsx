@@ -15,8 +15,8 @@ const Header = ({ bgColor }: HeaderProps) => {
             <S.Title>Calculadora de Matriz</S.Title>
             <S.Nav>
                 <ul>
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/calculator">Calculator</NavLink></li>
+                    <li><NavLink to="/">Inicio</NavLink></li>
+                    <li><NavLink to="/calculator">Calculadora</NavLink></li>
                 </ul>
             </S.Nav>
 
