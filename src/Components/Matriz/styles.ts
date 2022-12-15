@@ -49,7 +49,7 @@ export const FormStyled = styled.form<FormProps>`
   }
 
   & input:invalid {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #fff;
   }
 
   & input:valid {
